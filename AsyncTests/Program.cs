@@ -11,7 +11,8 @@ namespace AsyncTests
     {
         static void Main(string[] args)
         {
-            var worker = new Worker();
+            //var worker = new Worker();
+            var worker = new AnotherWorker();
             worker.StartWorking();
             //Console.ReadKey();
         }
