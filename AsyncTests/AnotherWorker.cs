@@ -30,6 +30,7 @@ namespace AsyncTests
             Console.WriteLine("     Computed value " + result); // after 5 seconds, this will resume
         }
 
+        // note that this method needs nothing special - Task.Run will unwrap the returned value
         public int Compute(int number)
         {
             Thread.Sleep(number * 1000);
